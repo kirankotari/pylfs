@@ -7,7 +7,7 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 	long_description = f.read()
 
-with open(path.join(here, '.version'), encoding='utf-8') as f:
+with open(path.join(here, 'pylfs/.version'), encoding='utf-8') as f:
 	version = f.read()
 
 setup(

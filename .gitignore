@@ -130,6 +130,7 @@ dmypy.json
 
 # Editors
 .idea
+.DS_Store
 
 # LFS
 pylfs/res/tar_files/*
