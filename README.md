@@ -1,2 +1,3 @@
-# pylfs
-Linux From Scratch automation in python
+# PYLFS: Linux from Scratch Automation in Python
+
+Automate the creation of LFS using python
