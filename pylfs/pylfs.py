@@ -5,8 +5,8 @@ import logging
 
 
 class PyLFS:
-    command = ['pylfs']
-    name = 'pylfs'
+    command = ["pylfs"]
+    name = "pylfs"
 
     def __init__(self, log_level=logging.INFO, log_format=None):
         self.format = log_format
@@ -14,12 +14,14 @@ class PyLFS:
 
     def set_logger_level(self, log_level):
         if self.format is None:
-            self.format = '[ %(levelname)s ] :: [ %(name)s ] :: %(message)s'
-        logging.basicConfig(stream=sys.stdout, level=log_level, format=self.format, datefmt=None)
+            self.format = "[ %(levelname)s ] :: [ %(name)s ] :: %(message)s"
+        logging.basicConfig(
+            stream=sys.stdout, level=log_level, format=self.format, datefmt=None
+        )
         logger = logging.getLogger(self.name)
         logger.setLevel(log_level)
         return logger
-    
+
     def __help(self):
         text = """
         PyLFS: Linux From Sratch Automation in Python
@@ -60,4 +62,3 @@ def run():
 if __name__ == "__main__":
     obj = PyLFS()
     print(obj.pylfs())
-    
